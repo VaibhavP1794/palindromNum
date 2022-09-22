@@ -1,0 +1,30 @@
+using System;
+using System.Linq;
+
+namespace NewProject1
+{
+    class Program
+    {
+        static void Main()
+        {
+            Console.Write("Enter first number:");
+            string numFirst = Console.ReadLine();
+            char[] numSecond = numFirst.ToArray();
+
+            char[] output = numFirst.Reverse().ToArray();
+            Console.WriteLine(output);
+            Console.WriteLine(numSecond);
+            bool equal = numSecond.SequenceEqual(output);
+            if
+                (equal)
+            {
+                Console.WriteLine("This is Palindrom number");
+            }
+            else
+            {
+                Console.WriteLine("This is Not Palindrom number");
+            }
+            Console.ReadLine();
+        }
+    }
+}
